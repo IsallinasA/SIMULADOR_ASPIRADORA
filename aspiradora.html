@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simulación Aspiradora</title>
+  </head>
+  <body>
+    <button id="startButton">Iniciar Simulación</button>
+    <div class="container">
+      <img
+        src="images/estacion.png"
+        alt="Estacion"
+        class="estacion-carga"
+        style="top: 195px; left: 500px"
+      />
+      <img
+        src="images/aspiradora.png"
+        alt="Aspiradora"
+        class="aspiradora"
+        style="top: 210px; left: 515px"
+      />
+      <div class="bodega ocupada" style="top: 70px; left: 300px">
+        Ocupada 🚧
+      </div>
+      <div class="bodega limpia" style="top: 70px; left: 50px">Limpia 🌟</div>
+      <div class="bodega sucia" style="top: 270px; left: 50px">Sucia 💩</div>
+      <div class="bodega libre-limpiar" style="top: 270px; left: 300px">
+        Libre-limpiar 🆓
+      </div>
+      <br />
+      <div style="display: flex; justify-content: center">
+        <table>
+          <tr>
+            <td>Batería:</td>
+            <td id="batteryStatus">100%</td>
+          </tr>
+          <tr>
+            <td>Bodegas Limpias:</td>
+            <td id="bodegasLimpias">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
